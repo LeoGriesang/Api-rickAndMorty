@@ -1,5 +1,12 @@
 "use strict";
-function somar(a, b) {
-    return a + b;
+async function fetchApi() {
+    const response = await fetch('https://rickandmortyapi.com/api/character/?page=1');
+    const json = await response.json();
+    mostrarPersonagens(json);
 }
-console.log(somar(4, 1));
+fetchApi();
+function mostrarPersonagens(data) {
+    data.results.forEach((data) => {
+        console.log(data);
+    });
+}
