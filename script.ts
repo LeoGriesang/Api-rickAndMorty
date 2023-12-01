@@ -18,6 +18,12 @@ interface resultado {
 }
 
 function mostrarPersonagens(data: personagem) {
+    const img1 = document.getElementById('img-1');
+    if (img1 instanceof HTMLImageElement) {
+        console.log(img1?.src)
+        img1?.setAttribute('src', data.results[0].image)
+    }
+
     data.results.forEach((data) => {
         console.log(data);
     })
