@@ -153,4 +153,8 @@
     .area-btn {
         width: 320px;
     }
+    .card img {
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
