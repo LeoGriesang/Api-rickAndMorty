@@ -76,8 +76,16 @@
     padding-bottom: 5px;
 }
 .card h2 {
-    font: 400 1rem/1.3 "Poppins", Sans-serif;
+    font: 400 1rem/1.1 "Poppins", Sans-serif;
     padding-bottom: 25px;
+}
+.card h2 span:first-child {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
 }
 .card h3 {
     font: 400 .9rem/1.3 "Roboto", Sans-serif;
